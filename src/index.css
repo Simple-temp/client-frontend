@@ -11,3 +11,261 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ##################### start ################ */
+:focus{
+  outline: none;
+}
+
+main {
+  flex: 1;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+ol, ul {
+  padding-left: 0rem !important;
+}
+/* ##################### Navbar ################ */
+
+.link{
+  color:#000130 !important;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left:20px;
+}
+
+.login{
+  background-color:#000130;
+  color: #ffffff;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border: 1px solid #000130;
+}
+
+.login:hover {
+  color:#000130;
+  background-color: #ffffff;
+}
+
+/* ##################### Header ################ */
+
+.header-top{
+  background-color: #000130;
+  height: auto;
+  padding-bottom: 70px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+
+.hero h1{
+  color: #ffffff;
+  text-align: left;
+  font-size: 45px;
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 21px;
+  margin-top:9px;
+}
+
+.hero button {
+  color:#000130;
+  background-color: #ffffff;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top:33px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border: 1px solid #000130;
+}
+
+.hero button:hover {
+  background-color:#000130;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* ##################### Build ################ */
+.build h2{
+  font-size:46px;
+  color: #000130;
+  font-weight:700;
+}
+
+.build-body h3 {
+  font-weight: 700;
+  color: #000130;
+}
+
+/* ##################### Templates ################ */
+.templates{
+  margin-top:50px;
+}
+.tem-btn{
+  background-color:#000130;
+  color: #ffffff;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top:33px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border: 1px solid #000130;
+}
+.tem-btn:hover{
+  color:#000130;
+  background-color: #ffffff;
+}
+
+.tem-item{
+  padding: 15px 0 60px 0;
+}
+
+/* ##################### Pricing ################ */
+
+.pricing{
+  margin-top:50px;
+}
+
+.pricing-item{
+  padding: 30px 10px 20px 10px;
+  text-align: center;
+}
+
+.pricing-item ul{
+  list-style: none;
+}
+
+.pricing-item ul li{
+  border-bottom: 1px solid #000130;
+  line-height: 60px;
+}
+
+.price-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom:20px;
+}
+.price{
+  font-size:22px;
+  font-weight: 600;
+}
+
+/* ##################### Profile ################ */
+.field{
+  width: 100%;
+  display: block;
+}
+
+.edit-file-img{
+  display: none !important;
+}
+
+.camera{
+  font-size: 30px;
+}
+
+/* ##################### Footer ################ */
+
+.footer-contant{
+    background-color: #000130;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+}
+
+.footer-contant h2{
+  color: #ffffff;
+  text-align: center;
+  font-size: 45px;
+}
+
+.footer-link{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin-top:9px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-btn{
+  display: block;
+  margin: auto;
+  color:#000130;
+  background-color: #ffffff;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top:33px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border: 1px solid #000130;
+}
+
+.footer-btn:hover{
+  background-color:#000130;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.footer-end-wrapper{
+  padding: 40px 0 60px 0;
+}
+
+.footer-end-wrapper .footer-end h5{
+  text-transform: uppercase;
+  color:gray;
+  margin-bottom: 10px;
+}
+
+.footer-end-wrapper .footer-end small{
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  text-transform: uppercase;
+}
