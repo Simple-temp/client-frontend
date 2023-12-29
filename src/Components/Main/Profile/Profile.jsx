@@ -23,9 +23,13 @@ function Profile() {
                             <Link to="/editprofile" className='link'>
                                 <button className='login mt-4'>Edit</button>
                             </Link>
+                            <Link to="/createnew" className='link'>
+                                <button className='login mt-4'>Create New Service</button>
+                            </Link>
                         </div>
                     </Col>
                     <Col lg={6} md={6} sm={12}>
+                        <h3 className='text-center py-3'>My Services</h3>
                         <Row>
                             <Col lg={6} md={6} sm={12}>
                                 <Card className='pb-4'>

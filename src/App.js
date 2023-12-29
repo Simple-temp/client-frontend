@@ -13,6 +13,7 @@ import AdminTemplate from "./Components/Main/AdminTemplate/AdminTemplate";
 import EditServices from "./Components/Services/EditServices";
 import EditProfile from "./Components/Main/Profile/EditProfile";
 import ViewSellerProfile from "./Components/Main/Sellers/ViewSellerProfile";
+import CreateNew from "./Components/Main/Profile/CreateNew";
 function App() {
   return (
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/editprofile" element={<EditProfile/>}/>
             <Route path="/editservice" element={<EditServices/>}/>
+            <Route path="/createnew" element={<CreateNew/>}/>
             <Route path="/sellers" element={<Sellers/>}/>
             <Route path="/viewsellerprofile" element={<ViewSellerProfile/>}/>
             <Route path="/admintemplate" element={<AdminTemplate/>}/>
