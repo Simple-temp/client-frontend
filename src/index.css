@@ -33,6 +33,20 @@ ol, ul {
 }
 /* ##################### Navbar ################ */
 
+.logout-btn{
+  background-color:#000130;
+  color: #ffffff;
+  padding: 7px 14px;
+  font-weight: bold;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  border: 1px solid #000130;
+  margin-left:20px
+}
+
 .link{
   color:#000130 !important;
   font-weight: 500;

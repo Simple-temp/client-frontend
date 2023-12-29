@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Home from "./Components/Main/Home/Home";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
@@ -14,32 +15,41 @@ import EditServices from "./Components/Services/EditServices";
 import EditProfile from "./Components/Main/Profile/EditProfile";
 import ViewSellerProfile from "./Components/Main/Sellers/ViewSellerProfile";
 import CreateNew from "./Components/Main/Profile/CreateNew";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+
 function App() {
   return (
 
     <BrowserRouter>
+      <ToastContainer position='top-right' limit={1} />
       <div className="min-height d-flex flex-column">
         <header className="App-header">
-          <Navvbar/>
-          <Header/>
+          <Navvbar />
+          <Header />
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/profile" element={<Profile/>}/>
-            <Route path="/editprofile" element={<EditProfile/>}/>
-            <Route path="/editservice" element={<EditServices/>}/>
-            <Route path="/createnew" element={<CreateNew/>}/>
-            <Route path="/sellers" element={<Sellers/>}/>
-            <Route path="/viewsellerprofile" element={<ViewSellerProfile/>}/>
-            <Route path="/admintemplate" element={<AdminTemplate/>}/>
-            <Route path="/register" element={<Register/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/*" element={<Notfound/>}/>
+            <Route path="/" element={<Home />} />
+
+            <Route path="/profile" element={<PrivateRoute>
+              <Profile />
+            </PrivateRoute>} />
+
+            <Route path="/editprofile" element={<EditProfile />} />
+            <Route path="/editservice" element={<EditServices />} />
+            <Route path="/createnew" element={<CreateNew />} />
+            <Route path="/sellers" element={<PrivateRoute>
+              <Sellers />
+            </PrivateRoute>} />
+            <Route path="/viewsellerprofile" element={<ViewSellerProfile />} />
+            <Route path="/admintemplate" element={<AdminTemplate />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/*" element={<Notfound />} />
           </Routes>
         </main>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </div>
     </BrowserRouter>
